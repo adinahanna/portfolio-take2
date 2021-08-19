@@ -53,6 +53,7 @@ a {
 #recent-work-link {
     color: rgb(97, 3, 69);
 }
+
 .icon-container {
     display: flex;
     flex-direction: row;
@@ -66,11 +67,6 @@ a {
     padding-right: 20px;
     transition: width .75s, height .75s;
 }
-.icon:hover {
-    cursor: pointer;
-    width: 80px;
-    height: auto;
-}
 .project-header {
     color: rgb(97, 3, 69);
     display: flex;
@@ -82,11 +78,6 @@ a {
     height: 20px;
     padding: 20px;
     transition: width .75s, height .75s;
-}
-.footer-icon:hover {
-    cursor: pointer;
-    width: 50px;
-    height: auto;
 }
 .project-container {
     display: flex;
@@ -127,10 +118,6 @@ a {
     border-radius: 10px;
     margin-bottom: 20px;
     margin-inline: 10px;
-}
-.project-link:hover {
-    opacity: .8;
-    box-shadow: 5px 5px 5px rgb(109, 100, 106);
 }
 h3 {
     font-size: 26px;

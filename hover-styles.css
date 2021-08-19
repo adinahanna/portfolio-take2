@@ -1,0 +1,20 @@
+@media (hover: hover) {
+    #recent-work-link:hover {
+        color: rgb(109, 100, 106);
+    }
+    .icon:hover {
+        cursor: pointer;
+        width: 80px;
+        height: auto;
+    }
+    .footer-icon:hover {
+        cursor: pointer;
+        width: 50px;
+        height: auto;
+    }
+    .project-link:hover {
+        opacity: .8;
+        box-shadow: 5px 5px 5px rgb(109, 100, 106);
+    }
+    
+}
