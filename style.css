@@ -1,6 +1,8 @@
 body {
     background-color: rgb(223, 246, 242);
     font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    scroll-behavior: smooth;
 }
 .name {
     color: rgb(97, 3, 69);
@@ -8,29 +10,30 @@ body {
     margin-top: 20px;
     margin-left: 50px;
     font-size: 40px;
+    position: fixed;
+    top: 0;
 }
 .portrait {
     border-radius: 30px;
     box-shadow: 25px 25px rgb(44, 160, 141);
-    margin-left: 90px;
 }
 .welcome-container {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
 }
 .img-container {
     margin-top: 30px;
 }
 .bio-container {
-    width: 400px;
     color:rgb(22, 80, 70);
-    height: 230px;
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
-    margin-left: 120px;
+    justify-content: center;
 }
 .bio-par {
-    width: 335px;
+    width: 400px;
     text-align: justify;
     font-size: 18px;
     margin-top: 0px;
@@ -47,27 +50,52 @@ a {
     text-decoration: none;
     color:rgb(22, 80, 70)
 }
+#recent-work-link {
+    color: rgb(97, 3, 69);
+}
 .icon-container {
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 80px;
     justify-content: center;
-    margin-bottom: 60px;
+    height: 100px;
 }
 .icon {
     width: 60px;
     height: auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: width .75s, height .75s;
 }
 .icon:hover {
     cursor: pointer;
     width: 80px;
     height: auto;
 }
+.project-header {
+    color: rgb(97, 3, 69);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+.footer-icon {
+    width: 40px;
+    height: auto;
+    padding: 20px;
+    transition: width .75s, height .75s;
+}
+.footer-icon:hover {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
 .project-container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .art-break-img {
     border-radius: 30px;
@@ -77,13 +105,29 @@ a {
     border-radius: 30px;
     box-shadow: 25px 25px rgb(225, 228, 89);
 }
+.allcity-img {
+    border-radius: 30px;
+    box-shadow: 25px 25px rgb(88, 170, 246);
+}
 .project-link-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.project-link {
+    display: flex;
+    transition: color 1s;
+    background-color: rgb(97, 3, 69);
+    color: white;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .project-link:hover {
-    color:rgb(97, 3, 69);
-    font-size: 20px;
+    opacity: .8;
+    box-shadow: 5px 5px 5px rgb(109, 100, 106);
 }
 h3 {
     font-size: 28px;
@@ -93,8 +137,29 @@ h3 {
 footer {
     padding-top: 40px;
     text-align: center;
+    font-size: 10px;
 }
-.proj-text-container {
-    margin-left: 90px;
-    margin-right: 120px;
+p {
+    font-family: 'Bitter', serif;
+}
+footer {
+    font-size: 16px;
+}
+.footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    height: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin: 20px;
+    }
+    .name {
+        text-align: center;
+        margin: 0px;
+        position: relative;
+    }
 }

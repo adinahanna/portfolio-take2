@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -18,8 +20,8 @@
             <img src="./assets/portrait.jpeg" alt="portrait of Adina" height="400px" width="auto" class='portrait'>
         </div>
         <div class='bio-container'>
-            <h1 class='greeting'>Hey y'all!</h1>
-            <p class='bio-par'>I am a <span>software engineer</span> with a passion for building functional and user-friendly applications. Take a look around the site and check out some of my <a href="#">projects.</a> </p>
+            <h2 class='greeting'>Hey y'all!</h2>
+            <p class='bio-par'>I am a <span>software engineer</span> with a passion for building functional and user-friendly applications. Take a look around the site and check out some of my projects<a href='#recent-work' id='recent-work-link'> below.</a> </p>
             <p class='bio-par'>If I'm not coding, I'm probably hanging out with my husband, Mitchell, and dog, Riley, cooking, reading, or solving crossword puzzles.</p>
         </div>
     </div>
@@ -34,9 +36,13 @@
         <a href="https://www.linkedin.com/in/adinaweinberg/" target="blank">
             <img src="./assets/linkedin.png" alt="Click to view Adina's LinkedIn profile" class="icon">
         </a>
-        <a href="./assets/adina-weinberg-resume-2021.pdf" target="blank">
+        <a href="./assets/resume.pdf" target="blank">
             <img src="./assets/resume-and-cv.png" alt="Click to view Adina's resume" class="icon">
         </a>
+    </div>
+
+    <div class='project-header'>
+        <h2 id='recent-work'>Recent Work<h2>
     </div>
 
     <div class="project-container">
@@ -52,19 +58,44 @@
     </div>
 
     <div class="project-container">
+        <div class="project-img-container">
+            <img src="./assets/Big-Tex-Screenshot.png" alt="Screenshot of Feed Big Tex! app" height="290px" width="auto" class="big-tex-img">
+        </div>
         <div class="proj-text-container">
-            <div class='project-img-container'>
-                <img src="./assets/Big-Tex-Screenshot.png" alt="Screenshot of Feed Big Tex! app" height="280px" width="auto" class="big-tex-img">
-            </div>
             <h3>Feed Big Tex!</h3>
-            <p class="bio-par">Feed Big Tex! is a matching game honoring my Texas roots with a State Fair of Texas theme. At the beginning of each round, a random number of fair visitors generates. The player must make matches to equal the number of fair visitors to win the game.
+            <p class='bio-par'>Feed Big Tex! is a matching game honoring my Texas roots with a State Fair of Texas theme. At the beginning of each round, a random number of visitors generates. The player must make matches to equal the number of fair visitors to win the game. 
             </p>
             <div class="project-link-container"><a href="https://github.com/adinahanna/big-tex-game" class="project-link" target="blank">GitHub Repo</a> <a href="https://adinahanna.github.io/big-tex-game/" class="project-link" target="blank">Deployed Project</a></div>
         </div>
     </div>
 
-    <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div class="project-container">
+        <div class="proj-text-container">
+            <h3>AllCity</h3>
+            <p class="bio-par">AllCity is a full-stack React Native and Django mobile application.  It is a platform for graffiti artists and lovers, alike, to share images of street art along with their location for others to enjoy. The brainchild of four engineers completely new to mobile development, AllCity is a labor of love and a work still in progress.</p>
+            <div class="project-link-container"><a href="https://github.com/All-City-All-Stars/allcity" class="project-link" target="blank">Front End Repo</a> <a href="https://github.com/All-City-All-Stars/allcity_django" class="project-link" target="blank">Back End Repo</a></div>
+        </div>
+        <div class="project-img-container">
+            <img src="assets/allcity-screenshot.png" alt="Screenshot of AllCity app" height="450px" width="auto" class="allcity-img">
+        </div>
+    </div>
+
+    <footer>   
+        <div class="footer-icon-container">
+            <a href="mailto:adina.weinberg@gmail.com" target="blank">
+                <img src="./assets/email.png" alt="Click to email Adina" class="footer-icon">
+            </a>
+            <a href="https://github.com/adinahanna" target="blank">
+                <img src="./assets/github.png" alt="Click to view Adina's GitHub profile" class="footer-icon">    
+            </a>
+            <a href="https://www.linkedin.com/in/adinaweinberg/" target="blank">
+                <img src="./assets/linkedin.png" alt="Click to view Adina's LinkedIn profile" class="footer-icon">
+            </a>
+            <a href="./assets/adina-weinberg-resume-2021.pdf" target="blank">
+                <img src="./assets/resume-and-cv.png" alt="Click to view Adina's resume" class="footer-icon">
+            </a>
+        </div>
+        <div>Thanks for stopping by!</div>
     </footer>
 
 </body>
