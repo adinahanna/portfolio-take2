@@ -86,7 +86,7 @@ a {
     width: 40px;
     height: auto;
     padding: 20px;
-    transition: width .75s, height .75s;
+    transition: width .25s, height .25s;
 }
 .project-container {
     display: flex;
